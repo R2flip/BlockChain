@@ -23,9 +23,8 @@
  guess_hash = digest(guess, algo = 'sha256')
  guess_hash 
  
- gsub('.*(.{2}$)', '\\1',guess_hash)="00"  # ends with two zeroes
- 
- regexpr("0000",guess_hash)[1]==1   # contains leading 4 zeroes
+ # gsub('.*(.{2}$)', '\\1',guess_hash)=="00"  # ends with two zeroes
+ # regexpr("0000",guess_hash)[1]==1           # contains leading 4 zeroes
  
  ## http://www.endmemo.com/program/R/gsub.php
  ## https://molecular-service-science.com/2015/01/18/text-processing-in-r-using-grep/
