@@ -1,6 +1,8 @@
 pragma solidity ^0.4.18;
 
-contract leoSmartcontract { string public name = "這是一個測試"; 
+contract leoSmartcontract { string public name = hex"e98099e698afe4b880e5808be6b8ace8a9a6";   
+
+// hex 這是一個測試
 
 function nameBytes() constant public returns (bytes) { 
     return bytes(name);
